@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+   }
+   .DesAccountLogos {
+    background: #ff538a;
+    border-radius: 4px;
+    height: 33px;
+    width: 33px;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+.Description1 {
+    background: white;
+    /* padding: 1.5em; */
+    margin: 10px 10px 0px;
+    min-height: 8.5em;
+    border-radius: 5px;
+  }
+  .first1 {
+    background: rgb(243, 243, 243);
+    padding: 1rem;
+    /* min-height: 8em; */
+    min-height: 4.2em;
+    position: relative;
+    /* border-radius: 5px; */
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    display: flex;
+    max-width: 100%;
+  }
+  .setRgt {
+    /* border-left: 0; */
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .seconds {
+    display: flex;
+    padding: 0.7rem;
+    max-width: 100%;
+    /* background: red; */
+    background: white;
+  }
+  .rm {
+    margin-right: 4em;
+  }
+  .font1 {
+    font-size: 0.8em;
+    color: rgb(116 116 116);
+  }
+  /* start tabs css */
+  .container {
+    width: 60%;
+    margin-left: 10px;
+    margin-top: 0.9em;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(116 116 116);
+  }
+  .tabss {
+    display: flex;
+    /* justify-content: space-between; */
+    border-bottom: 1px solid black;
+    padding-right: 520px;
+  }
+  .tabi {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+  .active-tabi {
+    border: none;
+    border-bottom: 2.5px solid rgb(83, 168, 237);
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .contents {
+    position: relative;
+  }
+  .content {
+    display: none;
+    position: relative;
+  }
+  .active-content {
+    display: block;
+    margin-left: 20px;
+    margin-right: 5px;
+    transition: all 1s ease-in-out;
+  }
+  .column div,
+p {
+  margin: 7px;
+ 
+}
+.tabi :last-child {
+    margin-right: 572px;
+}
+  /* end tabs css */

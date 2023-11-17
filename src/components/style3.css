@@ -1,0 +1,71 @@
+ResizableTable.css
+.resizable-table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .resizable-table th,
+  .resizable-table td {
+    border: 1px solid #ccc;
+    padding: 2px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .resizable-table th {
+    background-color: #f0f0f0;
+    position: relative;
+  }
+  
+  .resize-handle {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    cursor: col-resize;
+    background-color: #ccc;
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* width: var(--lwc-borderWidthThin,1px);  */
+   
+    display: block;
+    cursor: col-resize;
+    /* overflow: hidden; */
+    
+  }
+  /* .resize-handle::before{
+    background-color: var(--slds-g-color-neutral-base-70, var(--lwc-tableColorBackgroundHeaderResizableHandle,rgb(174, 174, 174)));
+    height: 100%;
+    width: var(--lwc-borderWidthThin,1px);
+    cursor: col-resize;
+  } */
+
+  .resize-handle:hover{
+      width: 5px;
+      height: 100%;
+      position: absolute;
+      right: -2px;
+      top: 0;
+      cursor: col-resize;
+      z-index: 1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      /* width: var(--lwc-borderWidthThin,1px);  */
+      
+      display: block;
+      cursor: col-resize;
+      background-color: var(--slds-g-color-brand-base-50, var(--lwc-colorBackgroundButtonBrand,rgb(1, 118, 211)));
+      width: var(--lwc-borderWidthThin,1px);
+      height: 60vh;
+      opacity: 1;
+      
+
+   
+  }
+  

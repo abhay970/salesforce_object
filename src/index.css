@@ -1,0 +1,606 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Account table delete start */
+.delete-btn{
+  background: red;
+  padding: 1px;
+  width: 30px;
+  font-size: 10px;
+  display: flex;
+
+}
+.fit{
+  z-index: 1;
+  padding-top: 10px;
+}
+/* Account table delete end */
+/* DEvelopmeNt starT*/
+/* ================================================================== */
+.Development {
+  margin-top: 50px;
+  /* border: 2px solid red; */
+  /* padding: 1em; */
+  /* display: grid; */
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.TestButton {
+  background: blueviolet;
+  border: none;
+  color: wheat;
+  padding: 1rem;
+}
+ /* table start*/
+.table-box {
+  width: 100%;
+  height: 3200px;
+  overflow-y: scroll;
+  /* background: #fff; */
+  background: rgb(243, 243, 243);
+}
+table {
+  width: 100%;
+}
+table,
+th,
+td {
+  border-top: 1px solid rgb(193, 189, 189);
+  border-bottom: 1px solid rgb(193, 189, 189);
+  border-collapse: collapse;
+  padding: 7px;
+  text-align: left;
+}
+th {
+  border: 1px solid rgb(193, 189, 189);
+  position: sticky;
+  top: 0;
+  box-sizing: border-box;
+  background-color: rgb(243, 243, 243);
+}
+tr th:nth-child(1) {
+  width: 60px;
+  text-align: center;
+  border-left: none;
+  border-right: none;
+}
+tr th:nth-child(2) {
+  border-left: none;
+}
+tr td:nth-child(1) {
+  text-align: center;
+}
+tr th:last-child {
+  border-right: none;
+}
+tr td:last-child {
+  border-right: none;
+}
+tr td {
+  background-color: white;
+}
+/* table end*/
+
+/* ================================================================== */
+/* DevLopMenT End */
+.Layout {
+  /* border: 2px solid red; */
+  min-height: 563px;
+}
+
+.Nav {
+  width: 100%;
+  min-height: 90px;
+  background-color: white;
+  border-bottom: 4px solid rgb(1 118 211);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  font-size: 10px;
+}
+.Nav ul {
+  margin-top: 28px;
+  margin-left: 4rem;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: nowrap;
+  /* align-items: center; */
+}
+.Nav li {
+  /* margin-left: 4px; */
+  padding: 1rem;
+}
+.Nav li a {
+  text-decoration: none;
+  color: rgb(62, 60, 60);
+  /* margin-left: 10px; */
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+.Nav li :hover {
+  border-top: 3.5px solid rgb(36, 110, 174);
+  padding: 1rem;
+}
+.Nav li :active {
+  border-top: 3.5px solid rgb(36, 110, 174);
+  padding: 1rem;
+}
+.Leads {
+  margin: 10px;
+  /* height: 89vh; */
+  height: 79vh;
+  background-color: rgb(243, 243, 243);
+  border-radius: 5px;
+  box-sizing: border-box;
+  /* horizontal alignment */
+  justify-content: center;
+  /* verticl alignment */
+  align-items: center;
+}
+
+ 
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 90%;
+  padding: 10px;
+  
+  min-height: 90px;
+  box-sizing: border-box;
+}
+.column div,
+p {
+  margin:5px;
+}
+ 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+  margin: 50px;
+}
+/* box instate of column to use entire row */
+.box {
+  margin: 0.6rem;
+  /* padding: 10px; */
+}
+
+.navigation {
+  display: inline;
+  position: absolute;
+  left: 2rem;
+  top: 3.8rem;
+}
+.sp1 {
+  --i: 0;
+  --x: -1;
+  --y: 0;
+}
+.sp2 {
+  --i: 1;
+  --x: 1;
+  --y: 0;
+}
+.sp3 {
+  --i: 2;
+  --x: 0;
+  --y: -1;
+}
+.sp4 {
+  --i: 3;
+  --x: 0;
+  --y: 1;
+}
+.sp5 {
+  --i: 4;
+  --x: 1;
+  --y: 1;
+}
+.sp6 {
+  --i: 5;
+  --x: -1;
+  --y: -1;
+}
+.sp7 {
+  --i: 6;
+  --x: 0;
+  --y: 0;
+}
+.sp8 {
+  --i: 7;
+  --x: -1;
+  --y: 1;
+}
+.sp9 {
+  --i: 8;
+  --x: 1;
+  --y: -1;
+}
+.navigation span {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background: rgb(116 116 116);
+  border-radius: 50%;
+  transform: translate(calc(9px * var(--x)), calc(9px * var(--y)));
+}
+/* * {
+  border: 1px solid red;
+} */
+.LeadLogo {
+  background: orangered;
+  border-radius: 10px;
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.Home {
+  margin: 10px;
+  height: 100vh;
+  padding: 10px;
+  /* background-color: rgb(243, 243, 243); */
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: center;
+}
+/* tabs creation css for structure and style */
+.container {
+  width: 66%;
+  margin-left: 10px;
+  margin-top: 0.9em;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+  color: rgb(116 116 116);
+}
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.tab {
+  flex: 1;
+  /* padding: 10px; */
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+}
+.active-tab {
+  border: none;
+  border-bottom: 2.5px solid rgb(83, 168, 237);
+  text-decoration: underline;
+  color: black;
+}
+
+.contents {
+  position: relative;
+}
+.content {
+  display: none;
+  position: relative;
+}
+.active-content {
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition: all 1s ease-in-out;
+}
+.Description {
+  background: white;
+  /* padding: 1.5em; */
+  margin: 10px 10px 0px;
+  min-height: 8.5em;
+  border-radius: 5px;
+}
+.first {
+  background: rgb(243, 243, 243);
+  padding: 1rem;
+  /* min-height: 8em; */
+  min-height: 4.2em;
+  position: relative;
+  /* border-radius: 5px; */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+  max-width: 100%;
+}
+.firstWithExt {
+  background: rgb(243, 243, 243);
+  padding: 1rem;
+  min-height: 8em;
+  /* min-height: 4.2em; */
+  position: relative;
+  /* border-radius: 5px; */
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  display: flex;
+}
+.DesLeadLogo {
+  background: rgb(27 150 255);
+  border-radius: 4px;
+  height: 33px;
+  width: 33px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.DesAccountLogo {
+  background: orangered;
+  border-radius: 4px;
+  height: 33px;
+  width: 33px;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.font {
+  margin: 0;
+  font-size: 0.8em;
+  color: rgb(116 116 116);
+}
+.fonth1 {
+  font-size: 1.2em;
+}
+.marginFont {
+  margin-left: 0.8em;
+}
+button {
+  background: white;
+  color: #0176d3;
+  padding: 6px 12px;
+  border: 1.39px solid rgb(158, 156, 156);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn {
+  position: absolute;
+  right: 0;
+  margin-right: 9px;
+}
+.follow {
+  margin-right: 5px;
+}
+.clRight {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: 0;
+  margin-bottom: 110px;
+  padding-top: 8.4px;
+}
+.edit {
+  border-radius: 0;
+}
+/**/
+.Relative {
+  min-width: 20px;
+  position: absolute;
+  top: 35px;
+  right: inherit;
+  z-index: 1;
+}
+.items {
+  border: 1.39px solid rgb(158, 156, 156);
+  border-radius: 5px;
+  min-width: 8rem;
+  background: white;
+}
+.items ul {
+  list-style-type: none;
+}
+.items li {
+  margin: 10px;
+}
+.items li:hover {
+  background: rgb(200, 198, 198);
+}
+.setRgt {
+  /* border-left: 0; */
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.second {
+  display: flex;
+  padding: 0.7rem;
+  max-width: 100%;
+}
+.rm {
+  margin-right: 4em;
+}
+.font1 {
+  font-size: 0.8em;
+  color: rgb(116 116 116);
+}
+.anch {
+  text-decoration: none;
+  color: #0176d3;
+}
+.black {
+  color: rgb(65, 64, 64);
+}
+.flex {
+  /* display: grid; */
+  grid-template-columns: auto auto auto auto;
+  /* g */
+}
+.EditPen {
+  margin-top: 4.9px;
+  margin-left: 320px;
+  cursor: pointer;
+}
+/* Modal css Start*/
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 1;
+}
+
+.overlay {
+  /* background: rgba(49, 49, 49, 0.8); */
+  background: rgba(0, 0, 0, 0.3);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+.cross-btn {
+  position: absolute;
+  top: 9px;
+  right: 237px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+
+  /* padding: 5px 7px; */
+}
+
+/* Modal css End*/
+/* LeadModalContent starT*/
+
+.LeadModalContent {
+  /* border: 2px solid red; */
+  width: 65.5vw;
+  height: 77.5vh;
+  /* margin: 10px; */
+  /* margin-top: 3rem; */
+  margin-top: 51px;
+  margin-left: 219px;
+  background: white;
+  border-radius: 5px;
+  border-top-right-radius: 5px;
+  overflow-y: scroll;
+  position: relative;
+}
+.LeadModalContent::-webkit-scrollbar {
+  width: 1.1rem;
+}
+.LeadModalContent::-webkit-scrollbar-track {
+  background: rgb(241 241 241);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-block: 0.7em;
+}
+.LeadModalContent::-webkit-scrollbar-thumb {
+  height: 1px;
+  background: rgb(193 193 193);
+  border: 2px solid rgb(241 241 241);
+}
+.Inside {
+  margin: 0;
+  /* border: 2px dotted blue; */
+}
+.Head {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.thickLine {
+  height: 0.14rem;
+  background: rgb(193 193 193);
+}
+.ReqInfo {
+  text-align: right;
+  font-size: 0.8em;
+  color: rgb(62, 60, 60);
+  margin: 1rem 1rem 0.5rem;
+}
+.star {
+  color: rgb(186 5 23);
+}
+.ColorBar {
+  background: rgb(243 243 243);
+  padding: 0.5rem 1rem;
+  border-radius: 0.3em;
+  margin: 0.1rem 0.5rem;
+}
+.descMargin {
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+.TextArea {
+  width: 46rem;
+  height: 4rem;
+  /* margin: 0rem 2rem 2rem 10rem; */
+  margin-top: 0rem;
+  margin-left: 2rem;
+  margin-bottom: 1.3rem;
+}
+.InputSize {
+  width: 320px;
+  height: 30.3906px;
+  margin-left: 2rem;
+  border-radius: 5px;
+  border-width: thin;
+  padding: 0.7rem;
+}
+.ButtonBar {
+  background: rgb(238 237 236);
+  opacity: 0.9;
+  padding: 1.6rem;
+  display: flex;
+  position: sticky;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  /* z-index: 1; */
+}
+.Margin {
+  margin-left: 0.1rem;
+  margin-right: 0.1rem;
+  border-width: thin;
+  border-color: rgb(98, 97, 97);
+}
+.Save {
+  margin-left: 0.17rem;
+  margin-right: 0.1rem;
+  background: #0176d3;
+  color: aliceblue;
+  border: none;
+}
+/* LeadModalContent End */
